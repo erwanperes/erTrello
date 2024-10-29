@@ -1,5 +1,24 @@
 <header>
-    <nav>
-      <%= link_to image_tag("logo"), root_path %>
-    </nav>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <%= link_to image_tag("logo", alt: "Logo" , height: "50" ), root_path, class: "navbar-brand" %>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <%= link_to "Home" , root_path , class: '' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Login" , new_user_registration_path , class: '' %>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-" href="#">Features</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
 </header>

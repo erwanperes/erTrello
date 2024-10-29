@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ErTrello</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
+
+<head>
+  <title>ErTrello</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+      <%= stylesheet_link_tag "application" , data: { turbo_track: "reload" } %>
+        <%= javascript_importmap_tags %>
+</head>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
-
-  <body>
-    <%= render "global/navbar" %>
+<body>
+  <%= render "global/navbar" %>
     <main class="container">
       <%= render "global/flashes" %>
-      <%= yield %>
+        <%= yield %>
     </main>
     <%= render "global/footer" %>
-  </body>
+</body>
+
 </html>
-
-

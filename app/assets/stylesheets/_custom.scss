@@ -97,7 +97,6 @@ header {
         a {
           @extend .nav-link;
           color: $secondary-link-color;
-          padding-bottom: 1px;
         }
 
         a:hover:not(.button),

@@ -1,5 +1,7 @@
-<%= render "components/jumbotron",
-    title: "Welcome to er-Task",
-    description: "Our task management app helps you stay organized and productive. Easily create, track, and prioritize tasks with a user-friendly interface. Never miss an important deadline again.",
-    button_text: 'Sign Up', button_link: '#' 
-%>
+<% title='Welcome to er-Task' %>
+    <% description='Our task management app helps you stay organized and productive. Easily create, track, and prioritize tasks with a user-friendly interface. Never miss an important deadline again.'
+        %>
+        <% button_text='Sign Up' %>
+            <% button_link=new_user_registration_path %>
+                <%= render partial: 'components/jumbotron' , locals: { title: title, description: description,
+                    button_text: button_text, button_link: button_link } %>

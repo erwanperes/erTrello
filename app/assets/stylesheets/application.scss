@@ -1,0 +1,14 @@
+// Graphical variables
+@import "fonts";
+@import "custom";
+
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}

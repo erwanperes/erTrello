@@ -1,7 +1,11 @@
 // Graphical variables
 @import "fonts";
 @import "custom";
+
+@import "font-awesome";
+
 @import "components/jumbotron";
+
 
 body {
   height: 100vh;
@@ -11,4 +15,13 @@ body {
 
 footer {
   margin-top: auto;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration:none;
 }
